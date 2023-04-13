@@ -203,7 +203,10 @@ CORS(app)
 @app.route('/',methods=['GET'])
 
 def recommend_movies():
-    response = get_recommendations("The Avengers",cosine_sim2)
+    arg=request.args
+    movie=arg.get("name")
+    
+    response = get_recommendations(movie,cosine_sim2)
     json_response=[]
     for res in response:
         json_response.append(f'https://api.themoviedb.org/3/movie/{res}?api_key=389b8a0210ce66880d4f3b0127b4b9ae&language=en-US')
