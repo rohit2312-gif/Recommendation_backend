@@ -2,9 +2,9 @@ import pandas as pd
 
 from sklearn.metrics.pairwise import cosine_similarity
 
-credits = pd.read_csv('./tmdb_5000_credits.csv')
-movies = pd.read_csv('./tmdb_5000_movies.csv')
-tmdb=pd.read_csv('./tmdb.csv')
+credits = pd.read_csv('tmdb_5000_credits.csv')
+movies = pd.read_csv('tmdb_5000_movies.csv')
+tmdb=pd.read_csv('tmdb.csv')
 
 
 # In[3]:
