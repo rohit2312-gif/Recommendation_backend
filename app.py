@@ -205,7 +205,7 @@ CORS(app)
 def recommend_movies():
     arg=request.args
     movie=arg.get("name")
-    
+    print(movie)
     response = get_recommendations(movie,cosine_sim2)
     json_response=[]
     for res in response:
