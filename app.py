@@ -3,14 +3,10 @@ import os
 from sklearn.metrics.pairwise import cosine_similarity
 
 
-root=os.getcwd()
-path1=os.path.join(root,'tmdb_5000_credits.csv')
-path2=os.path.join(root,'tmdb_5000_movies.csv')
-path3=os.path.join(root,'tmdb.csv')
 
-credits = pd.read_csv(path1)
-movies = pd.read_csv(path2)
-tmdb=pd.read_csv(path3)
+credits = pd.read_csv('https://raw.githubusercontent.com/rohit2312-gif/Recommendation_backend/main/tmdb_5000_credits.csv')
+movies = pd.read_csv('https://raw.githubusercontent.com/rohit2312-gif/Recommendation_backend/main/tmdb_5000_movies.csv')
+tmdb=pd.read_csv('https://raw.githubusercontent.com/rohit2312-gif/Recommendation_backend/main/TMDB.csv')
 
 
 # In[3]:
